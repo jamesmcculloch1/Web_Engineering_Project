@@ -1,0 +1,742 @@
+/*
+  Name: James McCulloch, Logan Doughty, Tamara Wold, Nathan-Fittler-Willis
+  Student No: 3291441, 3276255, 3088810 , 3189731
+  Date: 08/06/2019
+  Course: SENG2050
+  Assignment: Assignment 3
+
+  Description: external css for page styling
+*/
+
+
+/*STYLES FOR EVERYTHING GREATER THAN 900px (mobile)*/
+@media only screen and (min-width: 900px) {
+  /*style body tags*/
+  body {
+    margin-left: 1cm;
+    margin-right: 1cm;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: #FFFFFF;
+  }
+/*style general h3 tags*/
+  h3 {
+    color: white;
+    background-color:#878383;
+    padding: 20px 20px;
+    text-align: left;
+    margin-top: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+/*style td nested h3 tags*/
+   td h3 {
+    color: white;
+    background-color:#878383;
+    padding: 20px 20px;
+    text-align: left;
+    margin-top: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+  }
+/*style page-container class tags*/
+  .page-container {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+    min-height: 100%;
+  }
+/*style content-div class tags*/
+  .content-div {
+    width:100%;
+    padding-bottom: 6rem;
+  }
+/*style navigation class tags*/
+  .navigation {
+    height:auto;
+    padding-bottom: 50px;
+  }
+  /* Style nav links */
+  .navigation .links {
+    color: black;
+    float: right;
+    margin-top: 15px;
+    display: inline-block;
+  }
+/*style naviagtion a tags*/
+  .navigation a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+/*style logo class tags*/
+  .logo {
+    color: black;
+    padding: 14px 16px;
+    font-size: 17px;
+    float: left;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+
+/*style staffIssue class nested thead tr tags*/
+  .staffIssue thead tr {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+/*style staffIssue class nested tehad th tags*/
+  .staffIssue thead th {
+      text-align: left;
+      height:30px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+  }
+
+/*style staffIssue class nested thead td tags*/
+  .staffIssue thead td {
+      text-align: center;
+      font-weight: bold;
+      height:30px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+  }
+/*style staffIssue class nested thead tags*/
+  .staffIssue thead {
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+  }
+/*style staffIssue class nested table tags*/
+  .staffIssue table {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+  }
+/*style staffIssue class tags*/
+  .staffIssue {
+    width: 100%;
+  }
+/*style staffIssue class nested tbody tags*/
+  .staffIssue tbody {
+    height: 800px;
+    padding-bottom: 20px;
+  }
+/*style staffIssueForm class tags*/
+  .staffIssueForm {
+    width: 49%;
+  }
+
+/*style tbody and theads nested td and th tags*/
+  tbody td, thead th {
+    width: 100vw;
+    height:30px;
+  }
+
+/*style table tags*/
+  table {
+      width: 100%;
+      border-spacing: 0;
+      text-align: center;
+      background-color: #DDDCDD;
+      border-radius: 5px;
+      display: block;
+  }
+  /*style thead tags*/
+  thead {
+      display: block;
+      width: 100%;
+  }
+/*style tbody tags*/
+  tbody {
+      height: 200px;
+      display: block;
+      width: 100%;
+      overflow: auto;
+  }
+/*style comments class tags*/
+  .comments {
+    height: 300px;
+    border: solid #C9C8C9 2px;
+    overflow-y: scroll;
+  }
+
+/*style selectedIssue tags*/
+  .selectedIssue {
+    width: 49%;
+    background-color: #DDDCDD;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 5px;
+  }
+/*style userIssues class tags*/
+  .userIssues {
+    width: 49%;
+  }
+/*style userIssues class nested tbody tags*/
+  .userIssues tbody {
+    height: 300px;
+  }
+/*style UserIssueView ID tags*/
+  #UserIssueView {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*style selectedIssue class nested p tags*/
+  .selectedIssue p {
+    font-size: 15px;
+    text-align: left;
+    width: 80%;
+    padding: 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*style author class tags*/
+  .author {
+    margin-left: 10%;
+    padding: 20px 0 20px 0;
+    float: left;
+  }
+/*style date class tags*/
+  .date {
+    margin-right: 10%;
+    padding: 20px 0 20px 0;
+    float: right;
+  }
+/*style login class tags*/
+  .container {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    display: flex;
+  }
+/*style categoryKB class tags*/
+  .categoryKB {
+    background-color: #DDDCDD;
+    text-align: center;
+    width: 49%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+/*style categoryKB class nested p tags*/
+  .categoryKB p {
+    font-size: 15px;
+  }
+/*style button class tags*/
+  .button {
+    width: 80%;
+    color: white;
+    position: relative;
+    font-size: 17px;
+    margin-bottom: 3px;
+    padding: 20px 20px;
+    background-color:#878383;
+    border: none;
+    border-radius: 5px;
+    box-sizing: content-box;
+  }
+
+/*style button class hover action */
+  .button:hover {
+    background-color: #505050;
+  }
+
+/*style newIssue class tags*/
+  .newIssue {
+    background-color: #DDDCDD;
+    text-align: center;
+    width: 49%;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+/*style newIssue class nested p tags*/
+  .newIssue p {
+    font-size: 15px;
+  }
+/*style text input tags*/
+  .textIn {
+    width: 80%;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 20px 20px;
+    border-radius: 5px;
+  }
+/*style textarea, input and option focus*/
+  textarea:focus, input:focus, option:focus{
+      outline: none;
+  }
+/*style select tags*/
+  select {
+    width: 80%;
+    box-sizing: content-box;
+    margin: auto;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+  }
+/*style select active and hover*/
+  select:active, select:hover {
+    outline: none;
+  }
+
+/*style general textarea tags*/
+  textarea {
+    border: none;
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+/*style login class tags*/
+  .login {
+    max-width: 900px;
+    min-width: 900px;
+    background-color: #DDDCDD;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    border-radius: 5px;
+  }
+/*style Login class button tags*/
+  .login .button {
+    width: 80%;
+  }
+/*style login class container tags*/
+  .login-container {
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+  }
+/*styleLogin ID tags*/
+  #Login {
+    text-align: center;
+    width: 100%;
+  }
+/*style footer tags*/
+  footer {
+    margin-left: -1cm;
+    text-align: center;
+    background-color: #DB7F8E;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 40px;
+    height: 4rem;
+  }
+/*style archive-container class tags*/
+  .archive-container {
+    width: 49%;
+    background-color: #DDDCDD;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 5px;
+  }
+/*style archive class tags*/
+  .archive {
+    height: 700px;
+    overflow-y: scroll;
+  }
+/*style archive class nested p tags*/
+  .archive p {
+    font-size: 15px;
+    text-align: left;
+    width: 80%;
+    padding: 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*style categoryText class tags*/
+  .categoryText {
+    margin-left: 10%;
+    float: left;
+  }
+/*style description containers*/
+.container-desc {
+  display: block;
+  margin-top: 50px;
+}
+
+}
+
+
+/*
+
+MOBILE CSS BELOW
+
+*/
+@media only screen and (max-width: 900px) {
+
+/*style body*/
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: #FFFFFF;
+  }
+/*style h1 headers*/
+  h1 {
+    text-align: center;
+  }
+
+  /*style h3 headers*/
+  h3 {
+    color: white;
+    background-color:#878383;
+    padding: 20px 20px;
+    text-align: center;
+    margin-top: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  /* Style the navigation header menu */
+  .navigation {
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .navigation #menu {
+    display: none;
+  }
+
+  /* Style nav links */
+  .navigation a {
+    color: white;
+    background-color:#878383;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+/*style the last link in navigation*/
+  .navigation a.last {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+
+  /* Style the mobile menu */
+  .navigation a.hamburger {
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 14px 14px;
+    background-color: white;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Style the hamburger hover */
+  .navigation a.hamburger:hover {
+    background-color: #FFFFFF;
+  }
+
+
+  /* Add a background color on hover */
+  .navigation a:hover {
+    background-color:  #505050;
+    color: white;
+  }
+
+  /* Style the logo */
+  .logo {
+    color: black;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-weight: bold;
+    display: block;
+  }
+
+/*style table head and body td and th tags*/
+  tbody td, thead th {
+    text-align: center;
+    width: 100vw;
+    height:30px;
+  }
+
+/*general table styling */
+  table {
+      width: 100%;
+      border-spacing: 0;
+      text-align: center;
+      background-color: #DDDCDD;
+      border-radius: 5px;
+      display: block;
+      margin-bottom: 20px;
+  }
+
+  /*style general thead tags */
+  thead {
+      display: block;
+      width: 100%;
+  }
+
+/*general tbody styling*/
+  tbody {
+      height: 200px;
+      display: block;
+      width: 100%;
+      overflow: auto;
+  }
+
+/*style class type categoryKB tags*/
+  .categoryKB {
+    background-color: #DDDCDD;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  /*style class type categoryKB nest p tags*/
+  .categoryKB p {
+    font-size: 15px;
+  }
+
+  /*style button class items */
+  .button {
+    width: 80%;
+    color: white;
+    box-sizing: content-box;
+    position: relative;
+    font-size: 17px;
+    margin-bottom: 3px;
+    padding: 20px 20px;
+    background-color:#878383;
+    border: none;
+    border-radius: 5px;
+  }
+
+/*style button hover*/
+  .button:hover {
+    background-color: #505050;
+  }
+
+  /*style newIssue items */
+  .newIssue {
+    background-color: #DDDCDD;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+    /*style newIssue nested p tag items */
+  .newIssue p {
+    font-size: 15px;
+  }
+
+/*style text inputs*/
+  .textIn {
+    width: 80%;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 20px 20px;
+    border-radius: 5px;
+  }
+
+  /*style textarea,input an option inputs*/
+  textarea:focus, input:focus, option:focus{
+      outline: none;
+  }
+
+/*style select dropdowns*/
+  select {
+    width: 80%;
+    box-sizing: content-box;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+  }
+
+  /*style select clicked on and hover*/
+  select:active, select:hover {
+    outline: none;
+  }
+
+  /*general textarea styling*/
+  textarea {
+    border: none;
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  /*general footer styling*/
+  footer {
+    text-align: center;
+    background-color: #DB7F8E;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 80%;
+
+  }
+
+  /*styles selected issue sections*/
+  .selectedIssue {
+    background-color: #DDDCDD;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    border-radius: 5px;
+  }
+
+  /*styles selected issue nested p tags*/
+  .selectedIssue p {
+    font-size: 15px;
+    text-align: left;
+    width: 80%;
+    padding: 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*styles login class tags*/
+  .login {
+    background-color: #DDDCDD;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  /*styles login button tags*/
+  .login .button{
+    width: 80%;
+    box-sizing: content-box;
+  }
+
+  /*styles author class tags*/
+   .author {
+    margin-left: 10%;
+    padding: 20px 0 20px 0;
+  }
+
+  /*styles date in container-head class tags*/
+  .container-head .date {
+    text-align: left;
+  }
+  /*styles date class tags*/
+  .date {
+    margin-right: 10%;
+    padding: 20px 0 20px 0;
+  }
+  /*styles comment class tags*/
+  .comments {
+    height: 300px;
+    border: solid #C9C8C9 2px;
+    overflow-y: scroll;
+  }
+  /*styles the archive sections container tags*/
+  .archive-container {
+    width: 100%;
+    background-color: #DDDCDD;
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  /*styles archive class tags*/
+  .archive {
+    height: 300px;
+    overflow-y: scroll;
+  }
+  /*styles archive class nested p tags*/
+  .archive p {
+    font-size: 15px;
+    text-align: left;
+    width: 80%;
+    padding: 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*styles categoryText class tags*/
+  .categoryText {
+
+    margin-left: 10%;
+    text-align: left;
+  }
+/*styles DescMobileText class tags*/
+  .DescMobileText {
+    margin-top: 10%;
+  }
+/*styles staffIssueForm class tags*/
+  .staffIssueForm {
+    margin-bottom: 50px;
+  }
+
+/*styles staffIssueForm tbody tags*/
+  .staffIssue tbody {
+    padding-bottom: 50px;
+  }
+/*styles staffIssueForm table tags*/
+  .staffIssue table {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+/*styles staffIssueForm's theads tr tags*/
+  .staffIssue thead tr {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+/*styles staffIssueForm thead th tags*/
+  .staffIssue thead th {
+      text-align: left;
+      height:30px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+  }
+  /*styles staffIssueForm thead td tags*/
+  .staffIssue thead td {
+      font-weight: bold;
+  }
+
+/*styles staffIssueForm thead tags*/
+  .staffIssue thead {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  /*Styles account details for mobile*/
+  .details {
+    padding-top: 50px;
+    padding-left: 50px;
+    height: 100vh;
+  }
+
+}

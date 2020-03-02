@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Assignment3_seng2050</display-name>
+  
+ <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>controllers.Public.Login</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>login</servlet-name>
+   <url-pattern></url-pattern>
+</servlet-mapping>
+
+  
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Must be logged in</web-resource-name>
+      <url-pattern>/User/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Must be logged in</web-resource-name>
+      <url-pattern>/IT/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>IT_Staff</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Must be logged in</web-resource-name>
+      <url-pattern>/Shared/*</url-pattern>
+      <url-pattern>/Login</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Shared</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <realm-name>Users</realm-name>
+    <form-login-config>
+      <form-login-page>/WEB-INF/jsp/public/LoginPage.jsp</form-login-page>
+      <form-error-page>/WEB-INF/jsp/public/LoginError.jsp</form-error-page>
+    </form-login-config>
+  </login-config>
+  <security-role>
+    <role-name>User</role-name>
+  </security-role>
+  <security-role>
+    <role-name>IT_Staff</role-name>
+  </security-role>
+  <security-role>
+    <role-name>Shared</role-name>
+  </security-role>
+</web-app>
